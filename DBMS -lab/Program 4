@@ -1,0 +1,17 @@
+create database college;
+use college;
+
+create table staff (staffid varchar(20) primary key, name varchar(50),designation varchar(30),qualification varchar(30),type_of_appoinment varchar(30),dept_id varchar(20),salary int(10));
+
+create table department(dept_id varchar(20) primary key,dept_name varchar(20));
+
+insert into staff values('s1','Shifan','Teacher','MCA','Permanent','d10',50000);
+insert into staff values('s2','Harish','HOD','Doctorate','Permanent','d10',150000);
+insert into staff values('s3','Nelwin','Teacher','MCA','Temporary','d11',80000);
+insert into staff values('s4','Sreeraj','Teacher','MTech','Permanent','d20',50000);
+insert into staff values('s5','hamras','Lab teacher','Doctorate','Permanent','d16',50000);
+
+insert into department values('d10','MCA');
+insert into department values('d11','Computer Science');
+insert into department values('d20','Civil');
+insert into department values('d16','AI');
